@@ -24,7 +24,6 @@ const SignUpForm = () => {
     setFormFields(defaultFormFields);
   };
 
-  // console.log(formFields);
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (password != confirmPassword) {
@@ -52,8 +51,6 @@ const SignUpForm = () => {
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
   };
-
-  console.log(formFields);
 
   return (
     <div className="sign-up-container">
